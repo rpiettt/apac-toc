@@ -41,6 +41,10 @@
             flex-direction: column;
             position: relative;
             overflow: hidden;
+            width: 100%;
+            margin: 0;
+            max-width: none;
+            padding: 0;
         }
 
         .hero-photo-section {
@@ -240,6 +244,9 @@
         .program-intro-section {
             background: white;
             padding: 4rem 2rem;
+            width: 100%;
+            margin: 0;
+            max-width: none;
         }
 
         .program-intro-content {
@@ -3458,27 +3465,28 @@
                     <p class="moments-intro">We welcome leaders at different stages of their journey. In applications, leaders self-identify their current moment:</p>
                     <div class="moments-list">
                         <div class="moment-item">
-                            <span class="moment-label">Starting</span>
+                            <span class="moment-label">Starting <span style="font-weight: 400; opacity: 0.7; font-size: 0.85em;">(0%)</span></span>
                             <p>Taking on leadership for the first time or in a new, unfamiliar context</p>
                         </div>
                         <div class="moment-item">
-                            <span class="moment-label">Building</span>
+                            <span class="moment-label">Building <span style="font-weight: 400; opacity: 0.7; font-size: 0.85em;">(40%)</span></span>
                             <p>Leading a team or project, learning to drive results and grow trust</p>
                         </div>
                         <div class="moment-item">
-                            <span class="moment-label">Transitioning</span>
+                            <span class="moment-label">Transitioning <span style="font-weight: 400; opacity: 0.7; font-size: 0.85em;">(37%)</span></span>
                             <p>Reevaluating leadership: letting go, mentoring, or reshaping role</p>
                         </div>
                         <div class="moment-item">
-                            <span class="moment-label">Sustaining</span>
+                            <span class="moment-label">Sustaining <span style="font-weight: 400; opacity: 0.7; font-size: 0.85em;">(11%)</span></span>
                             <p>Holding long-term responsibility, focusing on legacy and systems</p>
                         </div>
                         <div class="moment-item">
-                            <span class="moment-label">Scaling</span>
+                            <span class="moment-label">Scaling <span style="font-weight: 400; opacity: 0.7; font-size: 0.85em;">(11%)</span></span>
                             <p>Expanding a proven model to new communities or partners</p>
                         </div>
                     </div>
-                    <p class="moments-note"><em>Note: We added this question to applications starting with the 2024-2025 cohort. Once we collect data across a few more cohorts, we'll analyze longitudinal data to determine whether our program better serves participants joining during certain leadership stages.</em></p>
+                    
+                    <p class="moments-note"><em>Note: Percentages reflect the 2025-2026 cohort, the first year we started asking for this data in the registration process. Once we collect data across a few more cohorts, we'll analyze longitudinal data to determine whether our program better serves participants joining during certain leadership stages.</em></p>
                 </div>
 
                 <!-- Cohort Composition Box -->
@@ -3502,6 +3510,10 @@
                             <strong>Issues & Disciplines</strong>
                             <p>Climate, education, health, security and defense, AI, human rights, arts, policy, community organizing, and more—ensuring cross-pollination of approaches</p>
                         </div>
+                    </div>
+                    
+                    <div style="background: var(--accent-pale); padding: 0.75rem 1rem; border-radius: 0.5rem; margin-top: 1.25rem;">
+                        <p style="margin: 0; font-size: 0.85rem; color: var(--primary-deep);"><strong style="font-size: 1.1rem;">92%</strong> <span style="opacity: 0.85;">of Asia-Pacific Leaders agreed their cohort included a group of leaders whose ideological perspectives varied and challenged and/or sharpened their own thinking.</span></p>
                     </div>
                     
                     <details class="design-pivot-toggle" style="margin-top: 1.5rem;">
@@ -3709,48 +3721,6 @@
                     </div>
                 </div>
                 
-                <!-- 4 P's of Practicing Pluralism -->
-                <div class="pluralism-modules">
-                    <h4>4 P's of Practicing Pluralism</h4>
-                    <p class="modules-subtitle">How we deliver the framework across four modules</p>
-                    
-                    <div class="modules-grid">
-                        <div class="module-card">
-                            <div class="module-p">Power</div>
-                            <div class="module-content">
-                                <strong>Module 1: Leading Self</strong>
-                                <p>Explore Courage, Empathy, Accountability, Integrity to root your work in values-based leadership</p>
-                            </div>
-                        </div>
-                        <div class="module-card">
-                            <div class="module-p">Polarities</div>
-                            <div class="module-content">
-                                <strong>Module 2: Leading Together</strong>
-                                <p>Explore Community, Accountability, Pragmatism, Inclusivity to engage diverse perspectives</p>
-                            </div>
-                        </div>
-                        <div class="module-card">
-                            <div class="module-p">Pragmatism</div>
-                            <div class="module-content">
-                                <strong>Module 3: Leading Together</strong>
-                                <p>Explore Community, Accountability, Pragmatism, Inclusivity to build collective power</p>
-                            </div>
-                        </div>
-                        <div class="module-card">
-                            <div class="module-p">Peacebuilding</div>
-                            <div class="module-content">
-                                <strong>Module 4: Leading Change</strong>
-                                <p>Explore Hope, Pragmatism, Imagination, Resilience to make tangible, sustainable progress</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <blockquote class="pluralism-quote">
-                        "Building bridges is not contrary to equality and social justice. In fact, it is our best tool for delivering lasting change."
-                        <span class="quote-attr">— President Obama</span>
-                    </blockquote>
-                </div>
-                
                 <!-- Mapping to Objectives -->
                 <div class="framework-mapping">
                     <p class="mapping-note">This framework maps to our three program objectives:</p>
@@ -3775,7 +3745,7 @@
             </div>
             
             <div class="toc-flow">
-                <!-- Activities -->
+                <!-- Program Architecture -->
                 <div class="toc-stage fade-in">
                     <div class="stage-label">
                         <div class="stage-icon">
@@ -3783,247 +3753,223 @@
                                 <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
                             </svg>
                         </div>
-                        <span class="stage-name">Activities</span>
+                        <span class="stage-name">Program Architecture</span>
                     </div>
                     <div class="stage-content">
-                        <div class="stage-items">
-                            <div class="stage-item">
-                                <h4>Weekly Leadership Sessions</h4>
-                                <p>5 months of virtual Saturday sessions (2-3 hours) for values-based leadership skills training and cohort-based learning</p>
-                            </div>
-                            <div class="stage-item">
-                                <h4>Community Groups</h4>
-                                <p>Monthly small-group dialogue sessions fostering deep peer connection and reflection</p>
-                            </div>
-                            <div class="stage-item">
-                                <h4>1:1 Coaching</h4>
-                                <p>5 individualized coaching sessions supporting personal leadership development</p>
-                            </div>
-                            <div class="stage-item">
-                                <h4>Fireside Chats</h4>
-                                <p>Conversations with regional thought leaders sharing wisdom and experience</p>
-                            </div>
-                            <div class="stage-item">
-                                <h4>Strategy Mentorship</h4>
-                                <p>Optional strategy chats with mentors and partners</p>
-                            </div>
-                            <div class="stage-item">
-                                <h4>In-Person Convening</h4>
-                                <p>1-week culminating experience building lasting relationships and community</p>
+                        <!-- Pedagogical Approach -->
+                        <div style="background: var(--primary-deep); color: white; padding: 1.25rem 1.5rem; border-radius: 0.5rem; margin-bottom: 1.5rem;">
+                            <p style="font-size: 0.9rem; margin: 0 0 1rem 0; line-height: 1.6;">Our pedagogy draws from multiple traditions to develop values-based leaders:</p>
+                            
+                            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
+                                <div style="background: rgba(255,255,255,0.1); padding: 0.75rem; border-radius: 0.4rem;">
+                                    <p style="font-size: 0.75rem; margin: 0; line-height: 1.5;"><strong style="color: #e07d3b;">Dialogic</strong> <span style="opacity: 0.8; font-size: 0.7rem;">(Bakhtin, Freire, Vygotsky)</span><br><span style="opacity: 0.9;">Understanding emerges where "two or more voices come into contact" — knowledge is co-constructed through mutual exchange rather than transmitted from knower to learner</span></p>
+                                </div>
+                                <div style="background: rgba(255,255,255,0.1); padding: 0.75rem; border-radius: 0.4rem;">
+                                    <p style="font-size: 0.75rem; margin: 0; line-height: 1.5;"><strong style="color: #63b3ed;">Dialectic</strong> <span style="opacity: 0.8; font-size: 0.7rem;">(Hegel, Socrates)</span><br><span style="opacity: 0.9;">Understanding emerges through the productive confrontation of opposing ideas; contradictions and tensions are examined until they give rise to new, more complete insights</span></p>
+                                </div>
+                                <div style="background: rgba(255,255,255,0.1); padding: 0.75rem; border-radius: 0.4rem;">
+                                    <p style="font-size: 0.75rem; margin: 0; line-height: 1.5;"><strong style="color: #68d391;">Transformative</strong> <span style="opacity: 0.8; font-size: 0.7rem;">(Mezirow)</span><br><span style="opacity: 0.9;">Learning that fundamentally shifts how leaders see themselves and the world — triggered by critical reflection on assumptions and "disorienting dilemmas" that challenge existing worldviews</span></p>
+                                </div>
+                                <div style="background: rgba(255,255,255,0.1); padding: 0.75rem; border-radius: 0.4rem;">
+                                    <p style="font-size: 0.75rem; margin: 0; line-height: 1.5;"><strong style="color: #f6ad55;">Narrative</strong> <span style="opacity: 0.8; font-size: 0.7rem;">(Storytelling-based)</span><br><span style="opacity: 0.9;">Knowledge constructed through story — personal narrative as a tool for self-understanding, identity formation, and leadership development</span></p>
+                                </div>
+                                <div style="background: rgba(255,255,255,0.1); padding: 0.75rem; border-radius: 0.4rem;">
+                                    <p style="font-size: 0.75rem; margin: 0; line-height: 1.5;"><strong style="color: #b794f4;">Contemplative</strong> <span style="opacity: 0.8; font-size: 0.7rem;">(Reflective practice)</span><br><span style="opacity: 0.9;">Inner work through silence, journaling, and reflection — creating space for integration, meaning-making, and values clarification</span></p>
+                                </div>
+                                <div style="background: rgba(255,255,255,0.1); padding: 0.75rem; border-radius: 0.4rem;">
+                                    <p style="font-size: 0.75rem; margin: 0; line-height: 1.5;"><strong style="color: #4fd1c5;">Community of Practice</strong> <span style="opacity: 0.8; font-size: 0.7rem;">(Lave & Wenger)</span><br><span style="opacity: 0.9;">Learning as participation in a community with shared practices — identity formation through belonging; the cohort becomes infrastructure for growth</span></p>
+                                </div>
                             </div>
                         </div>
+                        
+                        <!-- 4 P's Module Flow - Leader Journey -->
+                        <p style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 0.75rem; font-weight: 600;">The Leader Journey: 4 P's of Practicing Pluralism</p>
+                        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap;">
+                            <div style="flex: 1; min-width: 140px; background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%); color: white; padding: 0.75rem; border-radius: 0.5rem; text-align: center; position: relative;">
+                                <div style="font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.7;">Module 1</div>
+                                <div style="font-weight: 700; font-size: 1.1rem;">POWER</div>
+                                <div style="font-size: 0.7rem; opacity: 0.85; margin-top: 0.25rem; font-style: italic;">"Who am I as a leader?"</div>
+                                <div style="font-size: 0.65rem; opacity: 0.7; margin-top: 0.5rem;">Leading Self - Your Power</div>
+                            </div>
+                            <div style="display: flex; align-items: center; color: var(--text-muted);">→</div>
+                            <div style="flex: 1; min-width: 140px; background: linear-gradient(135deg, #2c5282 0%, #3182ce 100%); color: white; padding: 0.75rem; border-radius: 0.5rem; text-align: center;">
+                                <div style="font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.7;">Module 2</div>
+                                <div style="font-weight: 700; font-size: 1.1rem;">POLARITIES</div>
+                                <div style="font-size: 0.7rem; opacity: 0.85; margin-top: 0.25rem; font-style: italic;">"How do I invite and engage difference?"</div>
+                                <div style="font-size: 0.65rem; opacity: 0.7; margin-top: 0.5rem;">Different Stories, Common Hopes</div>
+                            </div>
+                            <div style="display: flex; align-items: center; color: var(--text-muted);">→</div>
+                            <div style="flex: 1; min-width: 140px; background: linear-gradient(135deg, #3182ce 0%, #4299e1 100%); color: white; padding: 0.75rem; border-radius: 0.5rem; text-align: center;">
+                                <div style="font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.7;">Module 3</div>
+                                <div style="font-weight: 700; font-size: 1.1rem;">PRAGMATISM</div>
+                                <div style="font-size: 0.7rem; opacity: 0.85; margin-top: 0.25rem; font-style: italic;">"How do we build together?"</div>
+                                <div style="font-size: 0.65rem; opacity: 0.7; margin-top: 0.5rem;">Shared Solutions</div>
+                            </div>
+                            <div style="display: flex; align-items: center; color: var(--text-muted);">→</div>
+                            <div style="flex: 1; min-width: 140px; background: linear-gradient(135deg, #4299e1 0%, #63b3ed 100%); color: white; padding: 0.75rem; border-radius: 0.5rem; text-align: center;">
+                                <div style="font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.7;">Module 4</div>
+                                <div style="font-weight: 700; font-size: 1.1rem;">PEACEBUILDING</div>
+                                <div style="font-size: 0.7rem; opacity: 0.85; margin-top: 0.25rem; font-style: italic;">"How do I sustain this work?"</div>
+                                <div style="font-size: 0.65rem; opacity: 0.7; margin-top: 0.5rem;">Looking Back, Moving Forward</div>
+                            </div>
+                        </div>
+                        
+                        <details class="design-pivot-toggle" style="margin-top: 0.5rem; margin-bottom: 1.5rem;">
+                            <summary>Why this sequence?</summary>
+                            <div class="pivot-content">
+                                <p>The modules build intentionally: Leaders must first understand their own power and values (Power) before they can genuinely engage across difference (Polarities). Only then can they move from dialogue to collaborative action (Pragmatism), and finally develop the resilience to sustain pluralistic leadership over time (Peacebuilding). Each stage creates the foundation for the next.</p>
+                            </div>
+                        </details>
+                        
+                        <!-- Three Program Pillars -->
+                        <p style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 0.75rem; font-weight: 600;">Three Program Pillars</p>
+                        
+                        <!-- Integration Flow -->
+                        <div style="background: var(--accent-pale); padding: 0.6rem 1rem; border-radius: 0.5rem; margin-bottom: 1rem; text-align: center;">
+                            <p style="font-size: 0.75rem; margin: 0; color: var(--primary-deep);">
+                                <strong style="color: #2c5282;">Hope to Action Sessions</strong> introduce frameworks and skills → 
+                                <strong style="color: #e07d3b;">Community Groups</strong> create space to make meaning and practice with peers → 
+                                <strong style="color: #e07d3b;">Coaching</strong> deepens personal understanding and application
+                            </p>
+                        </div>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1rem;">
+                            <div style="background: white; border-radius: 0.5rem; padding: 1rem; border-left: 3px solid #2c5282; box-shadow: 0 1px 3px rgba(0,0,0,0.08);">
+                                <div style="display: flex; align-items: center; gap: 0.35rem; margin-bottom: 0.5rem; flex-wrap: wrap;">
+                                    <span style="background: #63b3ed; color: white; font-size: 0.55rem; padding: 0.15rem 0.35rem; border-radius: 0.25rem; text-transform: uppercase;">Dialectic</span>
+                                    <span style="background: #68d391; color: white; font-size: 0.55rem; padding: 0.15rem 0.35rem; border-radius: 0.25rem; text-transform: uppercase;">Transformative</span>
+                                    <span style="background: #f6ad55; color: white; font-size: 0.55rem; padding: 0.15rem 0.35rem; border-radius: 0.25rem; text-transform: uppercase;">Narrative</span>
+                                </div>
+                                <h4 style="font-size: 0.85rem; color: var(--primary-deep); margin-bottom: 0.25rem;">Hope to Action Sessions</h4>
+                                <p style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 0.5rem;">Saturdays, 10am Singapore Time · 2-3 hours</p>
+                                <p style="font-size: 0.7rem; color: var(--text-muted); margin-bottom: 0.5rem; font-style: italic;">Theory, tools, and skills to navigate complexity</p>
+                                <ul style="font-size: 0.7rem; color: var(--text-body); margin: 0; padding-left: 1rem; line-height: 1.5;">
+                                    <li>Engage with complexity through applied theory</li>
+                                    <li>Develop strategic and values-based leadership</li>
+                                    <li>Foster critical reflection and generative tension</li>
+                                    <li>Build toward collective impact</li>
+                                </ul>
+                                <details class="design-pivot-toggle" style="margin-top: 0.75rem;">
+                                    <summary>Why weekly for 5 months?</summary>
+                                    <div class="pivot-content">
+                                        <p><strong>Ritual builds community.</strong> Weekly sessions create rhythm, familiarity, and repeated contact that turns strangers into trusted peers. By session 20, they're a community—not just a cohort.</p>
+                                        <p style="margin-top: 0.5rem;"><strong>Transformation requires sustained engagement.</strong> Mindset shifts don't happen in a weekend. The 5-month arc gives leaders time to encounter new frameworks, try them in their real work, reflect, and try again.</p>
+                                    </div>
+                                </details>
+                                <details class="design-pivot-toggle" style="margin-top: 0.5rem;">
+                                    <summary>Why Saturdays at 10am Singapore?</summary>
+                                    <div class="pivot-content">
+                                        <p><strong>Spanning 19 time zones.</strong> Our cohorts include leaders from Hawai'i (UTC-10) to Kiribati (UTC+14). 10am Singapore allows Hawai'i to join at 4:00pm Friday.</p>
+                                        <p style="margin-top: 0.5rem;"><strong>Inclusion of working adults and parents.</strong> Saturday mornings allow participation without sacrificing careers or family responsibilities.</p>
+                                        <p style="margin-top: 0.5rem; padding: 0.5rem; background: #fef2f2; border-radius: 0.25rem; font-size: 0.65rem;"><strong>Note:</strong> DC-based staff run sessions 10:00 PM–1:00 AM ET. Pilots at 4:00 PM Singapore saw attendance drop from ~90% to ~65%.</p>
+                                    </div>
+                                </details>
+                            </div>
+                            <div style="background: white; border-radius: 0.5rem; padding: 1rem; border-left: 3px solid #e07d3b; box-shadow: 0 1px 3px rgba(0,0,0,0.08);">
+                                <div style="display: flex; align-items: center; gap: 0.35rem; margin-bottom: 0.5rem; flex-wrap: wrap;">
+                                    <span style="background: #e07d3b; color: white; font-size: 0.55rem; padding: 0.15rem 0.35rem; border-radius: 0.25rem; text-transform: uppercase;">Dialogic</span>
+                                    <span style="background: #4fd1c5; color: white; font-size: 0.55rem; padding: 0.15rem 0.35rem; border-radius: 0.25rem; text-transform: uppercase;">Community of Practice</span>
+                                </div>
+                                <h4 style="font-size: 0.85rem; color: var(--primary-deep); margin-bottom: 0.25rem;">Community Groups</h4>
+                                <p style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 0.5rem;">Monthly · 1 hour · 5-6 Leaders per group</p>
+                                <p style="font-size: 0.7rem; color: var(--text-muted); margin-bottom: 0.5rem; font-style: italic;">Meaning-making and practice with peers</p>
+                                <ul style="font-size: 0.7rem; color: var(--text-body); margin: 0; padding-left: 1rem; line-height: 1.5;">
+                                    <li>Create a sense of belonging</li>
+                                    <li>Integrate learning in context</li>
+                                    <li>Practice pluralism and navigate tension</li>
+                                    <li>Bear witness to one another's growth</li>
+                                </ul>
+                                <details class="design-pivot-toggle" style="margin-top: 0.75rem;">
+                                    <summary>Why small groups of 5-6?</summary>
+                                    <div class="pivot-content">
+                                        <p><strong>The small group as the unit of belonging.</strong> Inspired by Peter Block's work on community, deep trust and vulnerability require intimate settings. Full cohort sessions of 35 can inspire and teach—but belonging happens in circles of 5-6.</p>
+                                        <p style="margin-top: 0.5rem;"><strong>Alumni-facilitated.</strong> Community Groups are facilitated by program alumni who model the leadership we cultivate, providing space for honest conversation that transforms how leaders see themselves and each other.</p>
+                                    </div>
+                                </details>
+                            </div>
+                            <div style="background: white; border-radius: 0.5rem; padding: 1rem; border-left: 3px solid #b794f4; box-shadow: 0 1px 3px rgba(0,0,0,0.08);">
+                                <div style="display: flex; align-items: center; gap: 0.35rem; margin-bottom: 0.5rem; flex-wrap: wrap;">
+                                    <span style="background: #e07d3b; color: white; font-size: 0.55rem; padding: 0.15rem 0.35rem; border-radius: 0.25rem; text-transform: uppercase;">Dialogic</span>
+                                    <span style="background: #b794f4; color: white; font-size: 0.55rem; padding: 0.15rem 0.35rem; border-radius: 0.25rem; text-transform: uppercase;">Contemplative</span>
+                                    <span style="background: #68d391; color: white; font-size: 0.55rem; padding: 0.15rem 0.35rem; border-radius: 0.25rem; text-transform: uppercase;">Transformative</span>
+                                </div>
+                                <h4 style="font-size: 0.85rem; color: var(--primary-deep); margin-bottom: 0.25rem;">Individual Coaching</h4>
+                                <p style="font-size: 0.65rem; color: var(--text-muted); margin-bottom: 0.5rem;">Monthly · 1 hour</p>
+                                <p style="font-size: 0.7rem; color: var(--text-muted); margin-bottom: 0.5rem; font-style: italic;">Personal understanding and contextual application</p>
+                                <ul style="font-size: 0.7rem; color: var(--text-body); margin: 0; padding-left: 1rem; line-height: 1.5;">
+                                    <li>Deepen self-awareness and values-based leadership</li>
+                                    <li>Strengthen adaptive and relational capacity</li>
+                                    <li>Build resilience for the long arc of leadership</li>
+                                </ul>
+                                <details class="design-pivot-toggle" style="margin-top: 0.75rem;">
+                                    <summary>Why 1:1 coaching?</summary>
+                                    <div class="pivot-content">
+                                        <p><strong>Individualized reflection space.</strong> Group sessions can't provide the personal attention each leader needs. Coaching offers dedicated space to process learnings, connect frameworks to personal context, and work through specific challenges.</p>
+                                        <p style="margin-top: 0.5rem;"><strong>Depth requires dedicated coaches.</strong> Foundation staff cannot provide this level of support to 35 leaders simultaneously. Dedicated coaches ensure sustained, personal attention throughout the program.</p>
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
+                        
+                        <!-- In-Person Convening -->
+                        <div style="background: linear-gradient(90deg, #f0f4f8 0%, #fff 100%); border-radius: 0.5rem; padding: 0.75rem 1rem; margin-bottom: 1rem; border-left: 3px solid var(--primary-deep);">
+                            <div style="display: flex; align-items: flex-start; gap: 0.75rem; flex-wrap: wrap;">
+                                <div style="flex: 1; min-width: 200px;">
+                                    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.25rem; flex-wrap: wrap;">
+                                        <h4 style="font-size: 0.8rem; color: var(--primary-deep); margin: 0;">In-Person Convening</h4>
+                                        <span style="font-size: 0.55rem; background: #4fd1c5; color: white; padding: 0.15rem 0.35rem; border-radius: 0.25rem; text-transform: uppercase;">Community of Practice</span>
+                                        <span style="font-size: 0.55rem; background: #68d391; color: white; padding: 0.15rem 0.35rem; border-radius: 0.25rem; text-transform: uppercase;">Transformative</span>
+                                    </div>
+                                    <p style="font-size: 0.65rem; color: var(--text-muted); margin: 0 0 0.25rem 0;">1 week · End of program · Asia-Pacific location</p>
+                                    <p style="font-size: 0.7rem; color: var(--text-body); margin: 0;">Culminating experience that transforms digital relationships into embodied ones—the kind of connection that sustains across years and distance.</p>
+                                </div>
+                                <details class="design-pivot-toggle" style="flex: 1; min-width: 200px; margin: 0;">
+                                    <summary>Why in-person at the end?</summary>
+                                    <div class="pivot-content">
+                                        <p><strong>Culmination, not introduction.</strong> Many programs start with an intensive then struggle to maintain momentum. We invert this: the in-person week is earned, anticipated, and serves as a capstone that cements community.</p>
+                                        <p style="margin-top: 0.5rem;"><strong>Respecting leaders' constraints.</strong> Asking leaders to take a week away is significant. Placing it at the end—once trust is built and value demonstrated—honors that sacrifice.</p>
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
+                        
+                        <!-- Optional Learning Support -->
+                        <div style="background: linear-gradient(90deg, #fef3e7 0%, #fff 100%); border-radius: 0.5rem; padding: 0.75rem 1rem; margin-bottom: 1rem; border-left: 3px solid #e07d3b;">
+                            <div style="display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;">
+                                <h4 style="font-size: 0.8rem; color: var(--primary-deep); margin: 0;">Optional Learning Support</h4>
+                                <span style="font-size: 0.6rem; background: #e07d3b; color: white; padding: 0.15rem 0.4rem; border-radius: 0.25rem; text-transform: uppercase;">Dialogic</span>
+                                <p style="font-size: 0.7rem; color: var(--text-body); margin: 0; flex: 1;">Strategy Advisor 1:1s and Staff 1:1s available throughout the program—offering personalized guidance and support for leaders seeking additional reflection and direction.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Program Rhythm -->
+                        <details class="design-pivot-toggle" style="margin-top: 0.75rem;">
+                            <summary>View Weekly Rhythm</summary>
+                            <div class="pivot-content">
+                                <p style="margin-bottom: 0.5rem;"><strong>Typical rhythm during the 5-month program:</strong></p>
+                                <p style="margin-bottom: 0.25rem;">• <strong>Weekly (Saturdays):</strong> Hope to Action Session (2-3 hours) — full cohort dialectic learning</p>
+                                <p style="margin-bottom: 0.25rem;">• <strong>Monthly:</strong> Community Group (1 hour) — small group dialogic practice</p>
+                                <p style="margin-bottom: 0.25rem;">• <strong>Monthly:</strong> Individual Coaching (1 hour) — personal reflection and integration</p>
+                                <p style="margin-bottom: 0.5rem;">• <strong>Throughout:</strong> Optional Strategy Advisor 1:1s, Staff 1:1s</p>
+                                <p><strong>Culminating:</strong> 1-week in-person convening — deepening relationships and community</p>
+                            </div>
+                        </details>
+                        
+                        <details class="design-pivot-toggle" style="margin-top: 0.5rem;">
+                            <summary>View Session Details by Module</summary>
+                            <div class="pivot-content">
+                                <p style="margin-bottom: 0.5rem;"><strong>Module 1 - Power:</strong> Values-Based Leadership, Strengthening Your Leadership Toolkit, Connecting Through Your Story, Understanding Your Power, Managing Productive Intellectual Tension</p>
+                                <p style="margin-bottom: 0.5rem;"><strong>Module 2 - Polarities:</strong> Engaging Community Voices, Connecting Across Difference, Shaping Shared Stories</p>
+                                <p style="margin-bottom: 0.5rem;"><strong>Module 3 - Pragmatism:</strong> Practicing Pluralism, Harnessing Inclusivity for Progress, Developing Common Ground, Building for Common Ground</p>
+                                <p><strong>Module 4 - Peacebuilding:</strong> "Fierce Urgency" and the Long Arc, Leading Through Change, Looking Back Moving Forward</p>
+                            </div>
+                        </details>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Program Design Logic Section -->
-    <section class="design-section">
-        <div class="design-content">
-            <div class="section-header">
-                <p class="section-label">Program Design Logic</p>
-                <h2 class="section-title">The Whys Behind Our Design Choices</h2>
-                <p class="section-intro">Every element of our program structure is intentional. Here's the theory behind our design choices.</p>
-            </div>
-
-            <div class="design-grid">
-                <!-- Weekly Rhythm -->
-                <div class="design-card fade-in">
-                    <div class="design-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
-                            <line x1="16" y1="2" x2="16" y2="6"/>
-                            <line x1="8" y1="2" x2="8" y2="6"/>
-                            <line x1="3" y1="10" x2="21" y2="10"/>
-                        </svg>
-                    </div>
-                    <h3>Why Weekly for 6 Months</h3>
-                    <div class="design-logic">
-                        <div class="logic-point">
-                            <strong>Ritual builds community.</strong>
-                            <p>You can't build a real network in a one-off intensive. Weekly sessions create rhythm, familiarity, and repeated contact that turns strangers into trusted peers. By session 20, they're a community—not just a cohort.</p>
-                        </div>
-                        <div class="logic-point">
-                            <strong>Transformation requires sustained engagement.</strong>
-                            <p>Mindset shifts don't happen in a weekend. The 6-month arc gives leaders time to encounter new frameworks, try them in their real work, reflect on what happened, and try again. This is the difference between <em>inspiration</em> (which fades) and <em>transformation</em> (which sticks).</p>
-                        </div>
-                        <div class="logic-point">
-                            <strong>Developmental arc over time.</strong>
-                            <p>The Hope to Action® curriculum follows a deliberate sequence through the 4 P's: early sessions focus on <em>Power</em> (Leading Self — grounding in values, identity, courage), middle sessions on <em>Polarities</em> and <em>Pragmatism</em> (Leading Together — engaging diverse perspectives, building collective power), and later sessions on <em>Peacebuilding</em> (Leading Change — turning hope into tangible, sustainable progress).</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Saturday & Time Zones -->
-                <div class="design-card fade-in">
-                    <div class="design-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-                        </svg>
-                    </div>
-                    <h3>Why Saturdays at 10am Singapore Time</h3>
-                    <div class="design-logic">
-                        <div class="logic-point">
-                            <strong>Inclusion of working adults and parents.</strong>
-                            <p>Our leaders are busy—running organizations, serving in government, leading movements. Saturday mornings allow participation without sacrificing careers or family responsibilities. A weekday program would exclude many of the leaders we most want to reach.</p>
-                        </div>
-                        <div class="logic-point">
-                            <strong>Spanning 19 time zones.</strong>
-                            <p>Our cohorts include leaders from Hawai'i (UTC-10) to Kiribati (UTC+14)—a 19-timezone spread. Sessions at 10am Singapore time allow participants in Hawai'i to join at 4:00pm Friday, towards the end of their work day. This carefully calculated compromise ensures accessibility across the entire Asia-Pacific region.</p>
-                        </div>
-                    </div>
-                    <div class="design-highlight highlight-red">
-                        <span class="highlight-label"><strong>Note:</strong> This means Obama Foundation Staff based in Washington DC (ET) are running the sessions from 10:00 PM to 1:00 AM ET.</span>
-                        <span class="highlight-label" style="margin-top: 0.5rem;">We piloted some sessions running at 4:00 PM Singapore Time / 11:00 PM Hawaiʻi time, run by our West Coast-based staff and/or UK-based faculty for two years now. However, we saw attendance drop from ~90% average to ~65% for these session times, along with lower participation and engagement amongst those in attendance.</span>
-                    </div>
-                </div>
-
-                <!-- Community Groups -->
-                <div class="design-card fade-in">
-                    <div class="design-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                            <circle cx="9" cy="7" r="4"/>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
-                        </svg>
-                    </div>
-                    <h3>Why Community Groups</h3>
-                    <div class="design-logic">
-                        <div class="logic-point">
-                            <strong>The small group as the unit of belonging.</strong>
-                            <p>Inspired by Peter Block's work on community, we recognize that deep trust and vulnerability require intimate settings. Full cohort sessions of 35 can inspire and teach—but belonging happens in circles of 5-6. The Community Group is each leader's first line of belonging to the broader cohort and Obama Leaders community.</p>
-                        </div>
-                        <div class="logic-point">
-                            <strong>Four integrated objectives:</strong>
-                        </div>
-                        <div class="coaching-objectives">
-                            <div class="coaching-obj">
-                                <span class="obj-tag ground-tag">Ground</span>
-                                <strong>Create a Sense of Belonging</strong>
-                                <p>Encourage leaders to show up fully and build trust by connecting beyond professional roles and identities. This small group is each leader's first line of belonging to the broader cohort and Obama Leaders community.</p>
-                            </div>
-                            <div class="coaching-obj">
-                                <span class="obj-tag collaborate-tag">Collaborate</span>
-                                <strong>Deepen Relationships Across Difference</strong>
-                                <p>Practice pluralism and navigate productive tension with diverse peers. Bear witness to one another's growth—building bonds and trust that last for the long arc of change.</p>
-                            </div>
-                            <div class="coaching-obj">
-                                <span class="obj-tag transform-tag">Transform</span>
-                                <strong>Integrate Learning in Context</strong>
-                                <p>Support leaders in making sense of their learning journey and applying program insights within the realities of their own communities and systems.</p>
-                            </div>
-                        </div>
-                        <div class="logic-point">
-                            <strong>Alumni-facilitated, monthly rhythm.</strong>
-                            <p>Community Groups meet roughly monthly, facilitated by program alumni who model the leadership we cultivate. These sessions provide space for the kind of honest conversation that transforms how leaders see themselves and each other.</p>
-                        </div>
-                    </div>
-                    <div class="design-highlight">
-                        <span class="highlight-number">5-6</span>
-                        <span class="highlight-label">Leaders per Group — By Graduation, Each Feels "Seen" by These Peers</span>
-                    </div>
-                </div>
-
-                <!-- Coaching -->
-                <div class="design-card fade-in">
-                    <div class="design-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                            <circle cx="12" cy="7" r="4"/>
-                        </svg>
-                    </div>
-                    <h3>Why 1:1 Coaching</h3>
-                    <div class="design-logic">
-                        <div class="logic-point">
-                            <strong>Individualized reflection space.</strong>
-                            <p>Group sessions can't provide the personal attention each leader needs. Coaching offers dedicated space to process learnings, connect frameworks to personal context, and work through the specific challenges each leader faces.</p>
-                        </div>
-                        <div class="logic-point">
-                            <strong>Depth requires dedicated coaches.</strong>
-                            <p>Foundation program staff cannot provide this level of individualized support to 35 leaders simultaneously. Our coaching team—with each coach supporting a maximum of 5 leaders—ensures every leader receives sustained, personal attention throughout the program.</p>
-                        </div>
-                        <div class="logic-point">
-                            <strong>Three integrated coaching objectives:</strong>
-                            <p></p>
-                        </div>
-                        <div class="coaching-objectives">
-                            <div class="coaching-obj">
-                                <span class="obj-tag ground-tag">Ground</span>
-                                <strong>Deepen Self-Awareness & Values-Based Leadership</strong>
-                                <p>Support leaders in clarifying their personal leadership values, purpose, and goals—and help them progress toward those goals with greater integrity.</p>
-                            </div>
-                            <div class="coaching-obj">
-                                <span class="obj-tag collaborate-tag">Collaborate</span>
-                                <strong>Strengthen Adaptive & Relational Capacity</strong>
-                                <p>Support leaders in seeing and pursuing new opportunities to navigate complexity, hold difference, and build trust across diverse communities.</p>
-                            </div>
-                            <div class="coaching-obj">
-                                <span class="obj-tag transform-tag">Transform</span>
-                                <strong>Build Resilience for the Long Arc</strong>
-                                <p>Support leaders to integrate reflective and regenerative practices to sustain impact—and themselves—over time.</p>
-                            </div>
-                        </div>
-                        <div class="logic-point">
-                            <strong>Practice ground for readiness.</strong>
-                            <p>Between sessions, leaders are already leading. Coaching helps them apply frameworks in their current contexts—building the muscle memory they'll draw on when bigger moments arrive.</p>
-                        </div>
-                    </div>
-                    <div class="design-highlight">
-                        <span class="highlight-number">5:1</span>
-                        <span class="highlight-label">Maximum Leader-to-Coach Ratio</span>
-                    </div>
-                </div>
-
-                <!-- In-Person Convening -->
-                <div class="design-card fade-in">
-                    <div class="design-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                            <circle cx="12" cy="10" r="3"/>
-                        </svg>
-                    </div>
-                    <h3>Why In-Person at the End</h3>
-                    <div class="design-logic">
-                        <div class="logic-point">
-                            <strong>Virtual builds relationship; in-person makes it real.</strong>
-                            <p>After 5 months of weekly connection, leaders arrive already knowing each other's stories, struggles, and contexts. The convening transforms digital relationships into embodied ones—the kind of connection that sustains across years and distance.</p>
-                        </div>
-                        <div class="logic-point">
-                            <strong>Culmination, not introduction.</strong>
-                            <p>Many programs start with an intensive then struggle to maintain momentum. We invert this: the in-person week is earned, anticipated, and serves as a capstone that cements the community and launches leaders into their next chapter.</p>
-                        </div>
-                        <div class="logic-point">
-                            <strong>Respecting leaders' constraints.</strong>
-                            <p>Asking leaders to take a full week away from work and family is significant. By placing it at the end—once trust is built and value is demonstrated—we honor that sacrifice and ensure leaders arrive ready to be fully present.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Design Pivots -->
-                <div class="design-card fade-in">
-                    <div class="design-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="23 4 23 10 17 10"/>
-                            <polyline points="1 20 1 14 7 14"/>
-                            <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
-                        </svg>
-                    </div>
-                    <h3>Design Pivots</h3>
-                    <div class="design-logic">
-                        <div class="logic-point">
-                            <strong>What we've learned and changed along the way.</strong>
-                            <p>Our program design continues to evolve based on participant feedback, outcome data, and operational learning. This section documents significant pivots we've made—and why.</p>
-                        </div>
-                    </div>
-                    <div class="design-highlight highlight-red">
-                        <span class="highlight-label"><em>Coming soon: Documentation of key design pivots and the evidence that informed them.</em></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Outcomes Section -->
     <section class="outcomes-section">
@@ -4262,7 +4208,7 @@
                     <div class="chain-arrow">→</div>
                     <div class="chain-step">
                         <span class="step-number">5</span>
-                        <p><strong>Systemic Impact</strong><br>28M children kept fed</p>
+                        <p><strong>Systemic Impact at National Level</strong><br>28M children kept fed</p>
                     </div>
                 </div>
             </div>
@@ -4318,9 +4264,11 @@
                     <p class="kpi-note">*1 Leader was removed from the program after failing to abide by attendance policy</p>
                 </div>
 
-                <!-- Coaching Completion KPI -->
+                <!-- Coaching KPI -->
                 <div class="kpi-card fade-in">
-                    <h4>Coaching Session Completion</h4>
+                    <h4>Coaching</h4>
+                    
+                    <p style="font-size: 0.75rem; font-weight: 600; color: var(--primary-deep); margin-bottom: 0.5rem;">Completion Rate</p>
                     <div class="kpi-bars">
                         <div class="kpi-bar-row">
                             <span class="kpi-year">2022</span>
@@ -4343,6 +4291,166 @@
                             <div class="kpi-bar-container">
                                 <div class="kpi-bar kpi-bar-pending" style="width: 100%; background: var(--cream);">
                                     <span class="kpi-value" style="color: var(--text-muted);">—</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p style="font-size: 0.75rem; font-weight: 600; color: var(--primary-deep); margin-bottom: 0.5rem; margin-top: 1rem;">Satisfaction <span style="font-weight: 400; font-size: 0.65rem; color: var(--text-muted);">(% of max score)</span></p>
+                    <div class="kpi-bars">
+                        <div class="kpi-bar-row">
+                            <span class="kpi-year">2022</span>
+                            <div class="kpi-bar-container">
+                                <div class="kpi-bar" style="width: 90%;">
+                                    <span class="kpi-value">90%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kpi-bar-row">
+                            <span class="kpi-year">2023</span>
+                            <div class="kpi-bar-container">
+                                <div class="kpi-bar" style="width: 96%;">
+                                    <span class="kpi-value">96%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kpi-bar-row">
+                            <span class="kpi-year">2024-2025</span>
+                            <div class="kpi-bar-container">
+                                <div class="kpi-bar" style="width: 95.3%;">
+                                    <span class="kpi-value">95%*</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="kpi-note">*New coaching partner in 2024-2025; retained existing coaches while expanding the team</p>
+                </div>
+
+                <!-- Community Group Satisfaction KPI -->
+                <div class="kpi-card fade-in">
+                    <h4>Community Group Satisfaction <span style="font-weight: 400; font-size: 0.7rem; color: var(--text-muted);">(% of max score)</span></h4>
+                    <div class="kpi-bars">
+                        <div class="kpi-bar-row">
+                            <span class="kpi-year">2022</span>
+                            <div class="kpi-bar-container">
+                                <div class="kpi-bar" style="width: 83%;">
+                                    <span class="kpi-value">83%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kpi-bar-row">
+                            <span class="kpi-year">2023</span>
+                            <div class="kpi-bar-container">
+                                <div class="kpi-bar" style="width: 84%;">
+                                    <span class="kpi-value">84%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kpi-bar-row">
+                            <span class="kpi-year">2024-2025</span>
+                            <div class="kpi-bar-container">
+                                <div class="kpi-bar" style="width: 92%;">
+                                    <span class="kpi-value">92%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="kpi-note">+8 percentage points after 2024-2025 design pivot: alumni now facilitate each group</p>
+                </div>
+
+                <!-- Session Satisfaction KPI -->
+                <div class="kpi-card fade-in">
+                    <h4>Average Session Satisfaction <span style="font-weight: 400; font-size: 0.7rem; color: var(--text-muted);">(% of max score)</span></h4>
+                    <div class="kpi-bars">
+                        <div class="kpi-bar-row">
+                            <span class="kpi-year">2022</span>
+                            <div class="kpi-bar-container">
+                                <div class="kpi-bar" style="width: 85.2%;">
+                                    <span class="kpi-value">85.2%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kpi-bar-row">
+                            <span class="kpi-year">2023</span>
+                            <div class="kpi-bar-container">
+                                <div class="kpi-bar" style="width: 84.9%;">
+                                    <span class="kpi-value">84.9%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kpi-bar-row">
+                            <span class="kpi-year">2024-2025</span>
+                            <div class="kpi-bar-container">
+                                <div class="kpi-bar" style="width: 90.2%;">
+                                    <span class="kpi-value">90.2%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="kpi-note">+5.3 percentage points after curriculum pilot in 2023</p>
+                    
+                    <details class="design-pivot-toggle" style="margin-top: 1rem;">
+                        <summary>2022 and 2023 Curriculum Redesign</summary>
+                        <div class="pivot-content">
+                            <p>After 2022, the Obama Foundation created an internal Strategic Learning team who partnered with Program Leads to design a new centralized "Hope to Action" curriculum. Piloted in 2023 and refined for 2024-2025, the redesign integrated pluralism throughout the program arc. Top-rated sessions now include Storytelling Night (95%), Exploring Values-Based Leadership (95%), and Welcome Home 'Ohana (93%).</p>
+                        </div>
+                    </details>
+                    
+                    <details class="design-pivot-toggle" style="margin-top: 0.5rem;">
+                        <summary>2023 → 2024-2025 Session Comparison</summary>
+                        <div class="pivot-content">
+                            <p style="margin-bottom: 0.75rem;"><strong>Biggest Improvements:</strong></p>
+                            <p style="margin-bottom: 0.25rem;">• Polarities and Power Fireside Chat: 70% → 88% <strong>(+18 pts)</strong></p>
+                            <p style="margin-bottom: 0.25rem;">• Lessons in Pluralism from the Pacific: 75% → 90% <strong>(+15 pts)</strong></p>
+                            <p style="margin-bottom: 0.25rem;">• Harnessing Inclusivity for Progress: 79% → 92% <strong>(+12 pts)</strong></p>
+                            <p style="margin-bottom: 0.25rem;">• Power of One Story (Koko Kondo): 81% → 93% <strong>(+12 pts)</strong></p>
+                            <p style="margin-bottom: 0.75rem;">• Exploring Values-Based Leadership: 85% → 95% <strong>(+10 pts)</strong></p>
+                            <p style="margin-bottom: 0.75rem;"><strong>Top-Rated Sessions Across Years:</strong></p>
+                            <p style="margin-bottom: 0.25rem;">• Public Narrative Workshops: 92-95%</p>
+                            <p>• Storytelling Night: 91-95%</p>
+                        </div>
+                    </details>
+                </div>
+
+                <!-- Optional Offerings KPI -->
+                <div class="kpi-card fade-in">
+                    <h4>Optional Offerings</h4>
+                    
+                    <p style="font-size: 0.75rem; font-weight: 600; color: var(--primary-deep); margin-bottom: 0.5rem;">Staff 1:1s</p>
+                    <div class="kpi-bars">
+                        <div class="kpi-bar-row">
+                            <span class="kpi-year">2023</span>
+                            <div class="kpi-bar-container">
+                                <div class="kpi-bar" style="width: 94%;">
+                                    <span class="kpi-value">94%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kpi-bar-row">
+                            <span class="kpi-year">2024-2025</span>
+                            <div class="kpi-bar-container">
+                                <div class="kpi-bar" style="width: 98%;">
+                                    <span class="kpi-value">98%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p style="font-size: 0.75rem; font-weight: 600; color: var(--primary-deep); margin-bottom: 0.5rem; margin-top: 1rem;">Strategy Advisor 1:1s</p>
+                    <div class="kpi-bars">
+                        <div class="kpi-bar-row">
+                            <span class="kpi-year">2023</span>
+                            <div class="kpi-bar-container">
+                                <div class="kpi-bar" style="width: 89%;">
+                                    <span class="kpi-value">89%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kpi-bar-row">
+                            <span class="kpi-year">2024-2025</span>
+                            <div class="kpi-bar-container">
+                                <div class="kpi-bar" style="width: 93%;">
+                                    <span class="kpi-value">93%</span>
                                 </div>
                             </div>
                         </div>
@@ -4506,16 +4614,9 @@
                             <strong>1:1 Coaching is highly effective.</strong>
                             <p>Leaders consistently rate coaching as a top programmatic element: 6.67/7 overall, with end-of-program evaluations citing it as most important (6.61/7 in 2023; 9.09/10 in 2022).</p>
                         </div>
-                        <div class="learning-item has-placeholder">
-                            <strong>The network has real value post-program.</strong>
-                            <p>Alumni continue to connect, collaborate, and support each other beyond graduation.</p>
-                            <div class="data-placeholder">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <circle cx="12" cy="12" r="10"/>
-                                    <path d="M12 8v8M8 12h8"/>
-                                </svg>
-                                <span>DATA NEEDED: Add alumni network engagement data</span>
-                            </div>
+                        <div class="learning-item">
+                            <strong>Leaders intend to stay engaged as alumni.</strong>
+                            <p>97% of Leaders across all cohorts express intention to remain engaged with the Obama Leaders community after graduation.</p>
                         </div>
                     </div>
                 </div>

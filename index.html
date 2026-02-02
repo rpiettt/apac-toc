@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Theory of Change | Obama Foundation Leaders Asia-Pacific Program</title>
+    <title>Design & Impact | Obama Foundation Leaders Asia-Pacific Program</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -234,6 +234,29 @@
             margin: 0 auto;
             font-size: 1.125rem;
             color: #4a5568;
+        }
+
+        /* Program Introduction Section */
+        .program-intro-section {
+            background: white;
+            padding: 4rem 2rem;
+        }
+
+        .program-intro-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .program-intro-content p {
+            font-family: 'Source Serif 4', serif;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: var(--text-body);
+        }
+
+        .program-intro-content strong {
+            color: var(--primary-deep);
         }
 
         /* Context Section */
@@ -568,6 +591,61 @@
             font-size: 0.875rem;
             color: rgba(8, 31, 93, 0.7);
             margin-top: 0.25rem;
+        }
+
+        /* Design Pivot Dropdown */
+        .design-pivot-toggle {
+            margin-top: 0.75rem;
+            border: none;
+            border-left: 1px solid rgba(8, 31, 93, 0.12);
+            border-radius: 0;
+            overflow: hidden;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .design-pivot-toggle summary {
+            padding: 0.25rem 0.6rem;
+            background: transparent;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 0.75rem;
+            color: rgba(8, 31, 93, 0.5);
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+            list-style: none;
+        }
+
+        .design-pivot-toggle summary:hover {
+            color: var(--primary-deep);
+        }
+
+        .design-pivot-toggle summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .design-pivot-toggle summary::before {
+            content: "▶";
+            font-size: 0.5rem;
+            transition: transform 0.2s ease;
+        }
+
+        .design-pivot-toggle[open] summary::before {
+            transform: rotate(90deg);
+        }
+
+        .design-pivot-toggle .pivot-content {
+            padding: 0.35rem 0.6rem 0.5rem;
+            background: transparent;
+            font-size: 0.75rem;
+            line-height: 1.5;
+            color: var(--text-body);
+        }
+
+        .design-pivot-toggle .pivot-content p {
+            margin: 0;
         }
 
         /* Selection Section - Who This Program Is For */
@@ -2629,27 +2707,29 @@
         /* Final Quote */
         .final-quote {
             background: linear-gradient(135deg, var(--primary-deep) 0%, #0a2870 100%);
-            padding: 6rem 2rem;
+            padding: 2rem 2rem;
             max-width: none;
             text-align: center;
         }
 
         .final-quote-content {
-            max-width: 800px;
+            max-width: 700px;
             margin: 0 auto;
         }
 
         .final-quote blockquote {
             color: var(--text-light);
-            font-size: clamp(1.125rem, 2vw, 1.375rem);
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
         }
 
         .final-quote .quote-attribution {
             color: var(--accent-light);
+            font-size: 0.85rem;
         }
 
         .final-quote .quote-mark {
-            color: var(--accent-light);
+            display: none;
         }
 
         /* Footer */
@@ -2671,6 +2751,122 @@
         .footer-text {
             font-size: 0.875rem;
             opacity: 0.7;
+        }
+
+        /* 5-Year Vision */
+        .vision-section {
+            background: var(--primary-deep);
+            color: var(--text-light);
+            padding: 3rem 2rem 2rem;
+            text-align: center;
+        }
+
+        /* Program Health & KPIs Section */
+        .kpis-section {
+            background: var(--cream);
+            padding: 4rem 2rem;
+        }
+
+        .kpis-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .kpis-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .kpi-card {
+            background: white;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            box-shadow: 0 2px 8px rgba(8, 31, 93, 0.06);
+        }
+
+        .kpi-card h4 {
+            font-size: 0.9rem;
+            color: var(--primary-deep);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .kpi-bars {
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+        }
+
+        .kpi-bar-row {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .kpi-year {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            width: 65px;
+            flex-shrink: 0;
+        }
+
+        .kpi-bar-container {
+            flex: 1;
+            height: 20px;
+            background: var(--cream);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .kpi-bar {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary-deep) 0%, var(--accent-light) 100%);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 0.5rem;
+        }
+
+        .kpi-value {
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: white;
+        }
+
+        .kpi-note {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            margin-top: 0.75rem;
+            font-style: italic;
+            line-height: 1.4;
+        }
+
+        .vision-content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .vision-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            opacity: 0.6;
+            margin-bottom: 0.75rem;
+        }
+
+        .vision-content p {
+            font-family: 'Source Serif 4', serif;
+            font-size: 1rem;
+            line-height: 1.7;
+            opacity: 0.85;
+            margin: 0;
+        }
+
+        .vision-content p + p {
+            margin-top: 1rem;
         }
 
         /* Responsive */
@@ -2799,6 +2995,16 @@
             padding: 1rem;
             background: var(--accent-pale);
             border-radius: 0.75rem;
+        }
+
+        .design-highlight.highlight-red {
+            background: #fde8e8;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .design-highlight.highlight-red .highlight-label {
+            color: #991b1b;
         }
 
         .highlight-number {
@@ -2930,7 +3136,7 @@
         <div class="hero-content-section">
             <div class="hero-content">
                 <p class="program-label">Obama Foundation Leaders</p>
-                <h1>Asia-Pacific Program<br>Theory of Change</h1>
+                <h1>Asia-Pacific Program<br>Design & Impact</h1>
                 <p class="hero-subtitle">Equipping emerging leaders with a values-based leadership framework and a community of support to advance inclusive and lasting change in their communities.</p>
                 <div class="hero-stats">
                     <div class="stat">
@@ -2953,6 +3159,13 @@
                     <path d="M12 5v14M19 12l-7 7-7-7"/>
                 </svg>
             </div>
+        </div>
+    </section>
+
+    <!-- Program Introduction -->
+    <section class="program-intro-section">
+        <div class="program-intro-content fade-in">
+            <p>From Indonesia to Hawaiʻi, President Obama's ties to the Asia-Pacific have shaped his values and his faith in the emerging generation of changemakers across the region. Established in 2019, the Leaders Asia-Pacific program equips emerging leaders with a values-based leadership framework—inspired by President and Mrs. Obama's legacy—to advance inclusive and lasting change in their communities. The program unites leaders from Southeast Asia, Northeast Asia, and the Pacific for leadership development and skill-building workshops focused on social change. To date, we've built a network of <strong>340 Obama Leaders</strong> from <strong>38 countries and territories</strong>, working across sectors and issue areas.</p>
         </div>
     </section>
 
@@ -2981,7 +3194,7 @@
                     </svg>
                 </div>
                 <h3>Build Trust Through Incremental Change</h3>
-                <p>The work doesn't wait for big moments. Leaders can drive incremental change now — fostering collaboration, creating shared experiences, building common ground across difference. This everyday work strengthens pluralism and builds the trust needed to act collectively when it matters most.</p>
+                <p>Around the world, we're witnessing increasing fragmentation, polarization, and declining trust in institutions and across communities. Against this backdrop, the work doesn't wait for big moments. Leaders can drive incremental change now—fostering collaboration, creating shared experiences, building common ground across difference. This everyday work strengthens pluralism and builds the trust needed to act collectively when it matters most.</p>
             </div>
             <div class="context-card fade-in">
                 <div class="context-icon">
@@ -3086,6 +3299,13 @@
             <blockquote>We are seeing successful efforts by young leaders around this country and around the world to reinvigorate pluralist values. And what those leaders are discovering is that, when they listen to people and recognize their multiple identities and seek out common experiences and common values – they're not just strengthening democratic habits. They're also building stronger organizations and delivering better results for their members. That's the power of pluralism. That's how we'll reduce the cynicism that is so prevalent in our politics right now. And ultimately, that's how we'll work together to solve the greatest challenges of our time.</blockquote>
             <p class="quote-attribution">— President Barack Obama</p>
             <p class="quote-source">2023 Democracy Forum Speech</p>
+            
+            <details class="design-pivot-toggle">
+                <summary>2023 Design Pivot</summary>
+                <div class="pivot-content">
+                    <p>In 2023, President Obama elevated pluralism as a key pillar for defending democracy worldwide. Given that many Obama Leaders operate in non-democratic contexts—and amid rising global polarization—the theme resonated deeply with our international audience. Additionally, alumni raised concerns that an increasingly democracy-branded program posed safety risks, noting they had joined a leadership development program before democracy became a central focus. This inspired a curriculum pivot: reframing the program around pluralistic leadership as a means of building democratic culture, rather than centering democracy itself.</p>
+                </div>
+            </details>
         </div>
     </section>
 
@@ -3174,6 +3394,27 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <details class="design-pivot-toggle" style="margin-top: 1.5rem;">
+                        <summary>2022 Design Pivot</summary>
+                        <div class="pivot-content">
+                            <p>We expanded eligibility to include more people who call the region home—such as refugees, asylum seekers, and non-citizens who have resided in the region for at least five years, regardless of legal status.</p>
+                        </div>
+                    </details>
+                    
+                    <details class="design-pivot-toggle" style="margin-top: 0.75rem;">
+                        <summary>2023 Design Pivot</summary>
+                        <div class="pivot-content">
+                            <p>We increased the age limit from 40 to 45 across Obama Leaders programs. A research review revealed we were likely missing leaders who embarked on their leadership journey later in life—particularly working mothers, Indigenous women, and women of color who historically face more barriers reaching leadership positions. Since making this change, Leaders joining between ages 40-45 have indeed tended to be women of color, working mothers, and Indigenous leaders.</p>
+                        </div>
+                    </details>
+                    
+                    <details class="design-pivot-toggle" style="margin-top: 0.75rem;">
+                        <summary>2024-2025 Design Pivot</summary>
+                        <div class="pivot-content">
+                            <p>For the language requirement, we moved from "written and spoken proficiency" to "professionally proficient" to use more inclusive language.</p>
+                        </div>
+                    </details>
                 </div>
 
                 <!-- Beyond Eligibility Box -->
@@ -3242,7 +3483,7 @@
 
                 <!-- Cohort Composition Box -->
                 <div class="selection-card composition-card fade-in">
-                    <h3>Intentional Cohort Composition</h3>
+                    <h3>Intentional Cohort of 35 Composition</h3>
                     <p class="composition-intro">We deliberately build cohorts that mix:</p>
                     <div class="composition-list">
                         <div class="composition-item">
@@ -3262,6 +3503,15 @@
                             <p>Climate, education, health, security and defense, AI, human rights, arts, policy, community organizing, and more—ensuring cross-pollination of approaches</p>
                         </div>
                     </div>
+                    
+                    <details class="design-pivot-toggle" style="margin-top: 1.5rem;">
+                        <summary>2022 Design Pivot</summary>
+                        <div class="pivot-content">
+                            <p><strong>Diversity is the curriculum.</strong> Leaders learn pluralism by practicing it. A cohort spanning 38 countries, multiple sectors, and diverse issue areas means every session is an exercise in engaging across difference—not as theory, but as lived experience.</p>
+                            <p style="margin-top: 0.75rem;"><strong>The cohort as practice ground.</strong> We teach leaders to bridge across difference, build trust with those unlike them, and find common ground amid divergent perspectives. The cohort itself becomes the space to practice these skills—making the learning embodied, not abstract.</p>
+                            <p style="margin-top: 0.75rem;"><strong>Network effects multiply impact.</strong> When a Filipino education leader knows Thai climate activists, Indonesian civic technologists, and Australian community organizers, the potential for collaboration expands exponentially. The cohort becomes infrastructure for future action.</p>
+                        </div>
+                    </details>
                 </div>
             </div>
 
@@ -3621,12 +3871,12 @@
                         </div>
                         <div class="logic-point">
                             <strong>Spanning 19 time zones.</strong>
-                            <p>Our cohorts include leaders from Hawai'i (UTC-10) to Kiribati (UTC+14)—a 19-timezone spread. Sessions at 10am Singapore time represent a carefully calculated compromise, with program staff and facilitators joining from Washington DC, Chicago, and Los Angeles.</p>
+                            <p>Our cohorts include leaders from Hawai'i (UTC-10) to Kiribati (UTC+14)—a 19-timezone spread. Sessions at 10am Singapore time allow participants in Hawai'i to join at 4:00pm Friday, towards the end of their work day. This carefully calculated compromise ensures accessibility across the entire Asia-Pacific region.</p>
                         </div>
                     </div>
-                    <div class="design-highlight">
-                        <span class="highlight-number">19</span>
-                        <span class="highlight-label">Time Zones Spanned</span>
+                    <div class="design-highlight highlight-red">
+                        <span class="highlight-label"><strong>Note:</strong> This means Obama Foundation Staff based in Washington DC (ET) are running the sessions from 10:00 PM to 1:00 AM ET.</span>
+                        <span class="highlight-label" style="margin-top: 0.5rem;">We piloted some sessions running at 4:00 PM Singapore Time / 11:00 PM Hawaiʻi time, run by our West Coast-based staff and/or UK-based faculty for two years now. However, we saw attendance drop from ~90% average to ~65% for these session times, along with lower participation and engagement amongst those in attendance.</span>
                     </div>
                 </div>
 
@@ -3751,29 +4001,24 @@
                     </div>
                 </div>
 
-                <!-- Cohort Diversity -->
+                <!-- Design Pivots -->
                 <div class="design-card fade-in">
                     <div class="design-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polygon points="12 2 2 7 12 12 22 7 12 2"/>
-                            <polyline points="2 17 12 22 22 17"/>
-                            <polyline points="2 12 12 17 22 12"/>
+                            <polyline points="23 4 23 10 17 10"/>
+                            <polyline points="1 20 1 14 7 14"/>
+                            <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
                         </svg>
                     </div>
-                    <h3>Why 35 Leaders Across Sectors & Countries</h3>
+                    <h3>Design Pivots</h3>
                     <div class="design-logic">
                         <div class="logic-point">
-                            <strong>Diversity is the curriculum.</strong>
-                            <p>Leaders learn pluralism by practicing it. A cohort spanning 38 countries, multiple sectors, and diverse issue areas means every session is an exercise in engaging across difference—not as theory, but as lived experience.</p>
+                            <strong>What we've learned and changed along the way.</strong>
+                            <p>Our program design continues to evolve based on participant feedback, outcome data, and operational learning. This section documents significant pivots we've made—and why.</p>
                         </div>
-                        <div class="logic-point">
-                            <strong>The cohort as practice ground.</strong>
-                            <p>We teach leaders to bridge across difference, build trust with those unlike them, and find common ground amid divergent perspectives. The cohort itself becomes the space to practice these skills—making the learning embodied, not abstract.</p>
-                        </div>
-                        <div class="logic-point">
-                            <strong>Network effects multiply impact.</strong>
-                            <p>When a Filipino education leader knows Thai climate activists, Indonesian civic technologists, and Australian community organizers, the potential for collaboration expands exponentially. The cohort becomes infrastructure for future action.</p>
-                        </div>
+                    </div>
+                    <div class="design-highlight highlight-red">
+                        <span class="highlight-label"><em>Coming soon: Documentation of key design pivots and the evidence that informed them.</em></span>
                     </div>
                 </div>
             </div>
@@ -4024,6 +4269,89 @@
         </div>
     </section>
 
+    <!-- Program Health & KPIs Section -->
+    <section class="kpis-section">
+        <div class="kpis-content">
+            <div class="section-header">
+                <p class="section-label">Program Health</p>
+                <h2 class="section-title">Key Performance Indicators</h2>
+            </div>
+
+            <div class="kpis-grid">
+                <!-- Attendance KPI -->
+                <div class="kpi-card fade-in">
+                    <h4>Session Attendance Rate</h4>
+                    <div class="kpi-bars">
+                        <div class="kpi-bar-row">
+                            <span class="kpi-year">2022</span>
+                            <div class="kpi-bar-container">
+                                <div class="kpi-bar" style="width: 85%;">
+                                    <span class="kpi-value">85%*</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kpi-bar-row">
+                            <span class="kpi-year">2023</span>
+                            <div class="kpi-bar-container">
+                                <div class="kpi-bar" style="width: 90%;">
+                                    <span class="kpi-value">90%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kpi-bar-row">
+                            <span class="kpi-year">2024-2025</span>
+                            <div class="kpi-bar-container">
+                                <div class="kpi-bar" style="width: 84%;">
+                                    <span class="kpi-value">84%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kpi-bar-row">
+                            <span class="kpi-year">2025-2026 (so far)</span>
+                            <div class="kpi-bar-container">
+                                <div class="kpi-bar" style="width: 85%;">
+                                    <span class="kpi-value">85%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="kpi-note">*1 Leader was removed from the program after failing to abide by attendance policy</p>
+                </div>
+
+                <!-- Coaching Completion KPI -->
+                <div class="kpi-card fade-in">
+                    <h4>Coaching Session Completion</h4>
+                    <div class="kpi-bars">
+                        <div class="kpi-bar-row">
+                            <span class="kpi-year">2022</span>
+                            <div class="kpi-bar-container">
+                                <div class="kpi-bar" style="width: 100%;">
+                                    <span class="kpi-value">100%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kpi-bar-row">
+                            <span class="kpi-year">2023</span>
+                            <div class="kpi-bar-container">
+                                <div class="kpi-bar" style="width: 100%;">
+                                    <span class="kpi-value">100%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kpi-bar-row">
+                            <span class="kpi-year">2024-2025</span>
+                            <div class="kpi-bar-container">
+                                <div class="kpi-bar kpi-bar-pending" style="width: 100%; background: var(--cream);">
+                                    <span class="kpi-value" style="color: var(--text-muted);">—</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Impact Section -->
     <section class="impact-section">
         <div class="impact-content">
@@ -4249,6 +4577,15 @@
             <div class="quote-mark">"</div>
             <blockquote>We cannot solve the challenges of our time unless we solve them together.</blockquote>
             <p class="quote-attribution">— President Obama</p>
+        </div>
+    </section>
+
+    <!-- 5-Year Vision -->
+    <section class="vision-section">
+        <div class="vision-content fade-in">
+            <p class="vision-label">Our 5-Year Vision</p>
+            <p>Leaders Asia-Pacific aspires to be the premier values-based leadership program in the Asia-Pacific, equipping emerging leaders across 44 nations and territories to drive inclusive, lasting change in their communities and beyond.</p>
+            <p>We aim to deliver world-class training that is both impactful and innovative—building not just individual leaders, but a regional community of practitioners, coaches, mentors, and curriculum experts who sustain and spread this work. By becoming the program of choice for influential leaders seeking to unlock their potential, we will advance President and Mrs. Obama's leadership legacy across the region and around the world.</p>
         </div>
     </section>
 

@@ -2780,17 +2780,20 @@
         }
 
         .kpis-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             gap: 1.5rem;
             margin-top: 2rem;
         }
-
+        
         .kpi-card {
             background: white;
             border-radius: 0.75rem;
             padding: 1.5rem;
             box-shadow: 0 2px 8px rgba(8, 31, 93, 0.06);
+            flex: 0 1 300px;
+            max-width: 350px;
         }
 
         .kpi-card h4 {
@@ -3307,7 +3310,7 @@
             <p class="quote-attribution">— President Barack Obama</p>
             <p class="quote-source">2023 Democracy Forum Speech</p>
             
-            <details class="design-pivot-toggle">
+            <details class="design-pivot-toggle" style="text-align: left;">
                 <summary>2023 Design Pivot</summary>
                 <div class="pivot-content">
                     <p>In 2023, President Obama elevated pluralism as a key pillar for defending democracy worldwide. Given that many Obama Leaders operate in non-democratic contexts—and amid rising global polarization—the theme resonated deeply with our international audience. Additionally, alumni raised concerns that an increasingly democracy-branded program posed safety risks, noting they had joined a leadership development program before democracy became a central focus. This inspired a curriculum pivot: reframing the program around pluralistic leadership as a means of building democratic culture, rather than centering democracy itself.</p>
@@ -3340,6 +3343,12 @@
                             <div class="eligibility-text">
                                 <strong>Location</strong>
                                 <p>Residing in one of 44 eligible Asia-Pacific countries and territories in Northeast Asia, Southeast Asia, and Oceania. <a href="https://www.obama.org/programs/leaders/asia-pacific/" target="_blank">See full list</a></p>
+                                <details class="design-pivot-toggle" style="margin-top: 0.75rem;">
+                                    <summary>2022 Design Pivot</summary>
+                                    <div class="pivot-content">
+                                        <p>We expanded eligibility to include more people who call the region home—such as refugees, asylum seekers, and non-citizens who have resided in the region for at least five years, regardless of legal status.</p>
+                                    </div>
+                                </details>
                             </div>
                         </div>
                         <div class="eligibility-item">
@@ -3363,6 +3372,12 @@
                             <div class="eligibility-text">
                                 <strong>Age & Experience</strong>
                                 <p>24-45 years old with at least 3 years in a leadership role</p>
+                                <details class="design-pivot-toggle" style="margin-top: 0.75rem;">
+                                    <summary>2023 Design Pivot</summary>
+                                    <div class="pivot-content">
+                                        <p>We increased the age limit from 40 to 45 across Obama Leaders programs. A research review revealed we were likely missing leaders who embarked on their leadership journey later in life—particularly working mothers, Indigenous women, and women of color who historically face more barriers reaching leadership positions. Since making this change, Leaders joining between ages 40-45 have indeed tended to be women of color, working mothers, and Indigenous leaders.</p>
+                                    </div>
+                                </details>
                             </div>
                         </div>
                         <div class="eligibility-item">
@@ -3386,6 +3401,12 @@
                             <div class="eligibility-text">
                                 <strong>Language</strong>
                                 <p>Professionally proficient in English</p>
+                                <details class="design-pivot-toggle" style="margin-top: 0.75rem;">
+                                    <summary>2024-2025 Design Pivot</summary>
+                                    <div class="pivot-content">
+                                        <p>For the language requirement, we moved from "written and spoken proficiency" to "professionally proficient" to use more inclusive language.</p>
+                                    </div>
+                                </details>
                             </div>
                         </div>
                         <div class="eligibility-item">
@@ -3401,27 +3422,6 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <details class="design-pivot-toggle" style="margin-top: 1.5rem;">
-                        <summary>2022 Design Pivot</summary>
-                        <div class="pivot-content">
-                            <p>We expanded eligibility to include more people who call the region home—such as refugees, asylum seekers, and non-citizens who have resided in the region for at least five years, regardless of legal status.</p>
-                        </div>
-                    </details>
-                    
-                    <details class="design-pivot-toggle" style="margin-top: 0.75rem;">
-                        <summary>2023 Design Pivot</summary>
-                        <div class="pivot-content">
-                            <p>We increased the age limit from 40 to 45 across Obama Leaders programs. A research review revealed we were likely missing leaders who embarked on their leadership journey later in life—particularly working mothers, Indigenous women, and women of color who historically face more barriers reaching leadership positions. Since making this change, Leaders joining between ages 40-45 have indeed tended to be women of color, working mothers, and Indigenous leaders.</p>
-                        </div>
-                    </details>
-                    
-                    <details class="design-pivot-toggle" style="margin-top: 0.75rem;">
-                        <summary>2024-2025 Design Pivot</summary>
-                        <div class="pivot-content">
-                            <p>For the language requirement, we moved from "written and spoken proficiency" to "professionally proficient" to use more inclusive language.</p>
-                        </div>
-                    </details>
                 </div>
 
                 <!-- Beyond Eligibility Box -->
@@ -4044,8 +4044,8 @@
                         <div class="kpi-bar-row">
                             <span class="kpi-year">2024-2025</span>
                             <div class="kpi-bar-container">
-                                <div class="kpi-bar kpi-bar-pending" style="width: 100%; background: var(--cream);">
-                                    <span class="kpi-value" style="color: var(--text-muted);">—</span>
+                                <div class="kpi-bar" style="width: 100%;">
+                                    <span class="kpi-value">100%</span>
                                 </div>
                             </div>
                         </div>
@@ -4137,12 +4137,12 @@
                             <span class="kpi-year">2024-2025</span>
                             <div class="kpi-bar-container">
                                 <div class="kpi-bar" style="width: 90.2%;">
-                                    <span class="kpi-value">90.2%</span>
+                                    <span class="kpi-value">90.2%*</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <p class="kpi-note">+5.3 percentage points after curriculum pilot in 2023</p>
+                    <p class="kpi-note">*+5.3 percentage points after pivot to Core-Faculty Model</p>
                     
                     <details class="design-pivot-toggle" style="margin-top: 1rem;">
                         <summary>2022 and 2023 Curriculum Redesign</summary>
@@ -4652,8 +4652,8 @@
                             <p>We believe small groups of 5-6 are the unit of belonging (per Peter Block), and the data is improving. But Community Groups have historically been our lowest-rated pillar. We're still learning how to optimize facilitation quality, session design, and frequency for maximum impact.</p>
                         </div>
                         <div class="learning-item">
-                            <strong>Sustaining coaching quality through partner transitions.</strong>
-                            <p>We switched coaching partners in 2024-2025 while retaining our existing coaches and expanding the team. Satisfaction held steady at 95%. We're watching to ensure quality remains consistent as the coaching roster evolves.</p>
+                            <strong>Understanding how coaching complements the core curriculum.</strong>
+                            <p>Coaches report thematic summaries after each cohort, revealing consistent patterns: leaders work through tensions around identity and authenticity, managing polarities (work/life, speaking out/staying silent, tradition/innovation), building resilience against burnout, and boundary work with stakeholders. We see clear alignment between coaching conversations and curriculum themes—but need more data to understand precisely how individual coaching deepens or extends what's introduced in sessions.</p>
                         </div>
                     </div>
                 </div>
